@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/home.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="http://github.hubspot.com/odometer/themes/odometer-theme-car.css" />
+    <script src="http://github.hubspot.com/odometer/odometer.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js">
+    </script>
+    <script src="http://maps.googleapis.com/maps/api/js?key=mykey&sensor=false"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js">
+    </script>
+    <script type="text/javascript">
+    jQuery(document).ready(function( $ ) {
+      $('span').counterUp({
+
+        delay: 10, // the delay time in ms
+
+        time: 1000 // the speed time in ms
+
+      });
+
+    });
+
+    </script>
+    <script type="text/javascript">
+        function openCity(evt, cityName) {
+
+        // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      document.getElementById("allTab").click();
+    </script>
+    <script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn111')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
+
+
+
+    <title></title>
+  </head>
+  <body>
+    <div class="parentContainer">
+      <div class="header">
+        <div class="contact">
+          <p id="call">Call Us On: 180011334    |    Email: admissions@asiapacific.edu</p>
+        </div>
+
+          <img id="fb" src="../media/images/facebook.png">
+          <img id="gPlus" src="../media/images/googleplus.png">
+          <img id="linkedIn" src="../media/images/linked.png">
+          <img id="pinterest" src="../media/images/pinterest.png">
+          <img id="twitter" src="../media/images/twitter.png">
+          <img id="youtube" src="../media/images/youtube.png">
+
+
+      </div>
+
+      <div class="navigationBar">
+        <img src="../media/images/mainlogo.png" alt="" id="logo">
+        <div class="menuLinks">
+          <div class="input-group searchButton">
+            <input type="text" class=" searchBar" placeholder="">
+            <a href="#"><img src="../media/images/searchIcon.png" alt="" ></a>
+            <div class="searchIcon">
+              <a href="#"><img src="../media/images/loginButton.png" alt=""></a>
+            </div>
+          </div>
+          <ul type="none" class="navList">
+            <li id="navItem" class="navItem1"><a href="../html/3_aboutUs.html" id="navLink">About Us</a></li>
+            <li id="navItem"><a href="#" id="navLink">Programs</a></li>
+            <li id="navItem"><a href="../html/5_researchCover.html" id="navLink">Research</a></li>
+            <li id="navItem"><a href="#" id="navLink">Faculty</a></li>
+            <li id="navItem"><a href="#" id="navLink">Admissions</a></li>
+            <li id="navItem"><a href="../html/4_library.html" id="navLink">Library</a></li>
+            <li id="navItem"><a href="#" id="navLink">Placement</a></li>
+            <li id="navItem"><a href="#" id="navLink">Takshila</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="facultyBanner">
+          <img src="../media/22_facultybackground.jpg" alt="">
+      </div>
+      <div class="blackBg">
+      </div>
+      <div class="flogo">
+        <img src="../media/Faculty.png" alt="" id="facultyLogo">
+      </div>
+      <div class="fbn">
+        <h2 class="mf11">Library</h2>
+        <h3 class="aim">Asia Pacific Institute of Management</h3>
+      </div>
+
+      <div id="admissionQuery1">
+        <img src="../media/images/admissionquery.png" alt="" >
+      </div>
+
+      <div class="btngrp1 container">
+        <div class="row">
+          <div class="col">
+            <button type="button" name="button" class="btnp1">About Library</button>
+          </div>
+          <div class="col">
+            <button type="button" name="button" class="btnp2">Opening Hours</button>
+          </div>
+          <div class="col">
+            <button type="button" name="button" class="btnp3">Rules and Regulations</button>
+          </div>
+          <div class="col">
+            <button type="button" name="button" class="btnp4">Membership</button>
+          </div>
+          <div class="col">
+            <button type="button" name="button" class="btnp5">FAQs</button>
+          </div>
+          <div class="col">
+            <button type="button" name="button" class="btnp6">Copyrights</button>
+          </div>
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn111">Student Resources</button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#sr">Study Resources</a>
+                <a href="#bi">Books Information</a>
+                <a href="#serv">Services</a>
+                <a href="#downloads">Downloads</a>
+                <a href="#osm">Online Study Material</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <br><br>
+      <h3 id="fpl">Library</h3>
+      <h6 id="apl"><strong>ATHENAEUM LEARNING RESOURCE CENTER</strong></h6>
+
+      <div class="">
+        <div class="container">
+          <div class="row">
+            <img src="../media/images/libimg.png" alt="">
+            <div class="col">
+              <h3 id="fpl1">Library Overview</h3><br>
+              <p id="lc1">
+
+                <strong>Books<br></strong>
+
+                • Present Status <br>
+
+                • Total Number of Volumes:                   <strong>43853</strong> (As per the Accession Register) <br>
+
+                • Total No. of Titles   :                           <strong>9000 -plus</strong> <br>
+
+                • Text Books  :                                      <strong>26458</strong>  <br>
+
+                •  Book-Bank   :                                     <strong>17395</strong> <br>
+
+                • (Book bank facility permits students to take and retain text books for the period of three months-Trimester-). Students are using this facility on a regular basis and it has become a very successful scheme for enhancing the learning).</p>
+            </div>
+          </div>
+          <div class="row atheneaum">
+            The Athenaeum Library of Asia-Pacific Institute of Management is housed in three fully-air conditioned floors.
+<br>
+• These calm areas promote active learning
+<br>
+• There are spaces for group discussion and idea exchange
+<br>
+• The three-storey Library building will have Wi- Fi facility soon.
+<br><br>
+About the Athenaeum Library
+<br>
+• The Athenaeum Library of Asia-Pacific Institute of Management is housed in three fully-air conditioned floors.
+<br>
+• These calm areas promote active learning
+<br>
+• There are spaces for group discussion and idea exchange
+<br>
+• The three-storey Library building will have Wi- Fi facility soon.
+<br><br>
+APIM Library’s Vision
+<br>
+• Ready access to print and electronic information resources
+<br>
+• Space for individual study
+<br>
+• Personal research assistance and services
+<br>
+• Independent room (Carrels) for all research scholars
+<br>
+• Space for team work and group collaboration
+<br><br>
+About to Company Name
+<br>
+﻿• ﻿The Athenaeum Library of Asia-Pacific Institute of Management is housed in three fully-air conditioned floors.
+<br>
+• These calm areas promote active learning
+<br>
+• There are spaces for group discussion and idea exchange
+<br>
+• The three-storey Library building will have Wi- Fi facility soon.
+<br><br>
+Overview of Library Resources-2
+<br>
+
+• Periodicals
+<br>
+• Journals (International) 40
+<br>
+• News Papers 11
+<br>
+• Magazine 31
+<br>
+• E-Journals 4000
+<br>
+• E-Journal Database 04
+<br>
+• EBSCO-Business Source Elite
+<br>
+• (More than 4000 Full text E-Journals available by J-Gate & Delnet)
+<br>
+• DELNET
+<br>
+• J-Gate
+<br>
+• CD-ROM
+<br>
+• Total No. of CDs 1780
+          </div>
+        </div>
+      </div>
+
+      <br><br><br>
+      <div class="container pgn">
+      <ul class="pagination">
+                    <li class="disabled"><a href="#">«</a></li>
+                    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">»</a></li>
+                  </ul>
+      </div>
+
+      <div class="lowerSection">
+        <img src="../media/images/footerLogo.png" alt="" class="f1">
+        <p id="description">Asia-Pacific Institute of Management<br> is a top ranked Business School of India.<br> The latest Business Today - MDRA survey<br> ranked the Institute "6th" amongst private<br> B-Schools in North India (9th amongst all<br> B-Schools in North India).</p>
+        <br><br>
+        <p id="accr">Accreditions:</p>
+        <img src="../media/images/accc1.png" alt="" id="accimg1">
+        <img src="../media/images/accc2.png" alt="" id="accimg">
+        <img src="../media/images/accc3.png" alt="" id="accimg">
+        <img src="../media/images/accc4.png" alt="" id="accimg">
+
+        <div class="f4">
+          <ul type="none">
+            <li id="fhh"><strong>ACADEMIC<br> PROGRAMMES</strong></li>
+            <br>
+            <li><a href="#" id="flink">PGDM</a></li>
+            <li><a href="#" id="flink">PGDM Marketing</a></li>
+            <li><a href="#" id="flink">PGDM IB</a></li>
+            <li><a href="#" id="flink">PGDM BFS</a></li>
+            <li><a href="#" id="flink">Executive PGDM</li>
+            <li><a href="#" id="flink">IBM SPSS</li>
+            <li><a href="#" id="flink">Mandatory Disclosures</a></li>
+            <li><a href="#" id="flink">NIRF 2017</a></li>
+          </ul>
+        </div>
+        <div class="f5">
+          <ul type="none">
+            <li id="fhh"><strong>ADMISSION</strong></li>
+            <br>
+            <li><a href="" id="flink">PGDM</a></li>
+            <li><a href="" id="flink">PGDM Marketing</a></li>
+            <li><a href="" id="flink">PGDM IB</a></li>
+            <li><a href="" id="flink">PGDM BFS</a></li>
+            <li><a href="" id="flink">CFERM</a></li>
+          </ul>
+        </div>
+        <div class="f6">
+            <ul type="none">
+              <li id="fhh"><strong>ALUMNI</strong></li>
+              <br>
+              <li><a href="" id="flink">Alumni in News</a></li>
+              <li><a href="" id="flink">Alumni Events</a></li>
+              <li><a href="" id="flink">Alumni Newsletter</a></li>
+            </ul>
+        </div>
+        <div class="f7">
+          <ul type="none">
+            <li id="fhh"><strong>OTHER LINKS</strong></li>
+            <br>
+            <li><a href="" id="flink">Contact Us</a></li>
+            <li><a href="" id="flink">Library</a></li>
+            <li><a href="" id="flink">Vision & Mission</a></li>
+            <li><a href="" id="flink">Chairman's Message</a></li>
+            <li><a href="" id="flink">Director's Message</a></li>
+            <li><a href="" id="flink">Mandatory Disclosure</a></li>
+            <li><a href="" id="flink">AICTE Approval Letter</a></li>
+            <li><a href="" id="flink">NIRF-2017 DATA</a></li>
+            <li><a href="" id="flink">Privacy Policy</a></li>
+            <li><a href="" id="flink">Image Gallery</a></li>
+            <li><a href="" id="flink">Video Gallery</a></li>
+            <li><a href="" id="flink">Blog</a></li>
+          </ul>
+        </div>
+        <div class="f8">
+
+            <p><strong>REQUEST A CALL BACK</strong></p>
+            <br>
+            <p id="footerli"><input type="text" placeholder="Name:" id="ff"></p>
+
+            <p id="footerli"><input type="text" placeholder="Phone No:" id="ff"></p>
+
+            <p id="footerli"><input type="text" placeholder="Email:" id="ff"></p>
+
+            <p id="footerli"><input type="text" placeholder="Query For:" id="ffff"></p>
+
+            <a href="#"><img src="../media/images/submitFooter.png" alt=""></a>
+
+        </div>
+        <div class="footersocialMediaLinks">
+          <a href="#"><img id="ffb" src="../media/images/footerFB.png"></a>
+          <a href="#"><img id="fgPlus" src="../media/images/footergPlus.png"></a>
+          <a href="#"><img id="flinkedIn" src="../media/images/footerlinkedin.png"></a>
+          <a href="#"><img id="ftwitter" src="../media/images/footerskype.png"></a>
+          <a href="#"><img id="fyoutube" src="../media/images/footertwitter.png"></a>
+          <a href="#"><img id="finstagram" src="../media/images/footerInstagram.png"></a>
+        </div>
+      </div>
+      <div class="end">
+        <br>
+         © Asia Pacific Institute of Management. All rights reserved.
+        <br>
+      </div>
+
+    </div>
+  </body>
+</html>

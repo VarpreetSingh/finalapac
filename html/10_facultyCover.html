@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/home.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="http://github.hubspot.com/odometer/themes/odometer-theme-car.css" />
+    <script src="http://github.hubspot.com/odometer/odometer.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js">
+    </script>
+    <script src="http://maps.googleapis.com/maps/api/js?key=mykey&sensor=false"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js">
+    </script>
+    <script type="text/javascript">
+    jQuery(document).ready(function( $ ) {
+      $('span').counterUp({
+
+        delay: 10, // the delay time in ms
+
+        time: 1000 // the speed time in ms
+
+      });
+
+    });
+
+    </script>
+    <script type="text/javascript">
+        function openCity(evt, cityName) {
+
+        // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      document.getElementById("allTab").click();
+    </script>
+    <title></title>
+  </head>
+  <body>
+    <div class="parentContainer">
+      <div class="header">
+        <div class="contact">
+          <p id="call">Call Us On: 180011334    |    Email: admissions@asiapacific.edu</p>
+        </div>
+
+          <img id="fb" src="../media/images/facebook.png">
+          <img id="gPlus" src="../media/images/googleplus.png">
+          <img id="linkedIn" src="../media/images/linked.png">
+          <img id="pinterest" src="../media/images/pinterest.png">
+          <img id="twitter" src="../media/images/twitter.png">
+          <img id="youtube" src="../media/images/youtube.png">
+
+
+      </div>
+
+      <div class="navigationBar">
+        <img src="../media/images/mainlogo.png" alt="" id="logo">
+        <div class="menuLinks">
+          <div class="input-group searchButton">
+            <input type="text" class=" searchBar" placeholder="">
+            <a href="#"><img src="../media/images/searchIcon.png" alt="" ></a>
+            <div class="searchIcon">
+              <a href="#"><img src="../media/images/loginButton.png" alt=""></a>
+            </div>
+          </div>
+          <ul type="none" class="navList">
+            <li id="navItem" class="navItem1"><a href="../html/3_aboutUs.html" id="navLink">About Us</a></li>
+            <li id="navItem"><a href="#" id="navLink">Programs</a></li>
+            <li id="navItem"><a href="../html/5_researchCover.html" id="navLink">Research</a></li>
+            <li id="navItem"><a href="#" id="navLink">Faculty</a></li>
+            <li id="navItem"><a href="#" id="navLink">Admissions</a></li>
+            <li id="navItem"><a href="../html/4_library.html" id="navLink">Library</a></li>
+            <li id="navItem"><a href="#" id="navLink">Placement</a></li>
+            <li id="navItem"><a href="#" id="navLink">Takshila</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="facultyBanner">
+          <img src="../media/22_facultybackground.jpg" alt="">
+      </div>
+      <div class="blackBg">
+      </div>
+      <div class="flogo">
+        <img src="../media/Faculty.png" alt="" id="facultyLogo">
+      </div>
+      <div class="fbn">
+        <h2 class="mf">Meet The Faculty</h2>
+        <h3 class="aim">Asia Pacific Institute of Management</h3>
+      </div>
+
+      <div id="admissionQuery1">
+        <img src="../media/images/admissionquery.png" alt="" >
+      </div>
+
+      <div class="btngrp container">
+        <div class="row">
+          <div class="col">
+            <button type="button" name="button" class="btn111">Core Faculty</button>
+          </div>
+          <div class="col">
+            <button type="button" name="button" class="btn111">Visiting Faculty</button>
+          </div>
+          <div class="col">
+            <button type="button" name="button" class="btn111">Management Team</button>
+          </div>
+          <div class="col">
+            <button type="button" name="button" class="btn111">International Faculty</button>
+          </div>
+          <div class="col">
+            <button type="button" name="button" class="btn111">Guest Speakers</button>
+          </div>
+          <div class="col">
+            <button type="button" name="button" class="btn111">MDP and Consultancy</button>
+          </div>
+        </div>
+      </div>
+
+      <br><br>
+      <h3 id="fp">Faculty Profile</h3>
+      <h6 id="ap"><strong>ACADEMIC AREA</strong></h6>
+
+
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'All')" id="allTab">All</button>
+        <button class="tablinks" onclick="openCity(event, 'BusinessAnalytics')">Business Analytics</button>
+        <button class="tablinks" onclick="openCity(event, 'BusinessCommunication')">Business Communication</button>
+        <button class="tablinks" onclick="openCity(event, 'EconomicEnvironmentandPolicy')">Economic Environment and Policy</button>
+        <button class="tablinks" onclick="openCity(event, 'Finance')">Finance</button>
+        <button class="tablinks" onclick="openCity(event, 'StratergyInnovationandEntrepreneurship')">Stratergy, Innovation and Entrepreneurship</button>
+        <button class="tablinks" onclick="openCity(event, 'SustainabilityandSocialResponsibility')">Sustainability and Social Responsibility</button>
+        <button class="tablinks" onclick="openCity(event, 'HumanResource')">Human Resource</button>
+        <button class="tablinks" onclick="openCity(event, 'MarketingManagement')">Marketing Management</button>
+        <button class="tablinks" onclick="openCity(event, 'InformationTechnologyandAnalytics')">Information Technology and Analytics</button>
+        <button class="tablinks" onclick="openCity(event, 'MediaandEntertainmentManagement')">Media and Entertainment Management</button>
+        <button class="tablinks" onclick="openCity(event, 'OperationsManagement')">Operations Management</button>
+        <button class="tablinks" onclick="openCity(event, 'SustainabilityandSocialResponsibility')">Sustainability and Social Responsibility</button>
+      </div>
+      <div class="">
+          <div id="All" class="tabcontent">
+			         <div class="row r1">
+            <div class="col">
+              <a href="../html/11_innerfaculty1.html"><img src="../media/f5.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f6.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f7.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f8.jpg" alt="" id="fimage1"></a>
+            </div>
+          </div>
+          <div class="row r2">
+            <div class="col">
+              <a href=""><img src="../media/f9.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f10.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f11.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f12.jpg" alt="" id="fimage1"></a>
+            </div>
+          </div>
+          <div class="row r3">
+            <div class="col">
+              <a href=""><img src="../media/f13.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f14.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f15.jpg" alt=""id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f16.jpg" alt="" id="fimage1"></a>
+            </div>
+          </div>
+          <div class="row r4">
+            <div class="col">
+              <a href=""><img src="../media/f17.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f18.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f19.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f20.jpg" alt="" id="fimage1"></a>
+            </div>
+          </div>
+          <div class="row r5">
+            <div class="col">
+              <a href=""><img src="../media/f21.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f22.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f23.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f24.jpg" alt="" id="fimage1"></a>
+            </div>
+          </div>
+          <div class="row r6">
+            <div class="col">
+              <a href=""><img src="../media/f25.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f26.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f4.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f3.jpg" alt="" id="fimage1"></a>
+            </div>
+          </div>
+          <div class="row r6">
+            <div class="col">
+              <a href=""><img src="../media/f2.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f1.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col"></div>
+            <div class="col"></div>
+          </div>
+        </div>
+
+        <div id="BusinessAnalytics" class="tabcontent">
+          <div class="row r51">
+            <div class="col">
+              <a href=""><img src="../media/f21.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f22.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f23.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f24.jpg" alt="" id="fimage1"></a>
+            </div>
+          </div>
+        </div>
+
+        <div id="BusinessCommunication" class="tabcontent">
+          <div class="row r21">
+            <div class="col">
+              <a href=""><img src="../media/f9.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f10.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f11.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f12.jpg" alt="" id="fimage1"></a>
+            </div>
+          </div>
+        </div>
+        <div id="EconomicEnvironmentandPolicy" class="tabcontent">
+          <div class="row r51">
+            <div class="col">
+              <a href=""><img src="../media/f21.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f22.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f23.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f24.jpg" alt="" id="fimage1"></a>
+            </div>
+          </div>
+          </div>
+
+
+        <div id="Finance" class="tabcontent">
+          <div class="row r21">
+            <div class="col">
+              <a href=""><img src="../media/f9.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f10.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f11.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f12.jpg" alt="" id="fimage1"></a>
+            </div>
+          </div>
+        </div>
+
+        <div id="HumanResource" class="tabcontent">
+          <div class="row r31">
+            <div class="col">
+              <a href=""><img src="../media/f13.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f14.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f15.jpg" alt=""id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f16.jpg" alt="" id="fimage1"></a>
+            </div>
+          </div>
+        </div>
+        <div id="MarketingManagement" class="tabcontent">
+          <div class="row r51">
+            <div class="col">
+              <a href=""><img src="../media/f21.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f22.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f23.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f24.jpg" alt="" id="fimage1"></a>
+            </div>
+          </div>
+        </div>
+
+        <div id="StratergyInnovationandEntrepreneurship" class="tabcontent">
+          <div class="row r21">
+            <div class="col">
+              <a href=""><img src="../media/f9.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f10.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f11.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f12.jpg" alt="" id="fimage1"></a>
+            </div>
+          </div>
+        </div>
+
+        <div id="InformationTechnologyandAnalytics" class="tabcontent">
+          <div class="row r51">
+            <div class="col">
+              <a href=""><img src="../media/f21.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f22.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f23.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f24.jpg" alt="" id="fimage1"></a>
+            </div>
+          </div>
+        </div>
+        <div id="MediaandEntertainmentManagement" class="tabcontent">
+          <div class="row r21">
+            <div class="col">
+              <a href=""><img src="../media/f9.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f10.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f11.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f12.jpg" alt="" id="fimage1"></a>
+            </div>
+          </div>
+        </div>
+
+        <div id="OperationsManagement" class="tabcontent">
+          <div class="row r51">
+            <div class="col">
+              <a href=""><img src="../media/f21.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f22.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f23.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f24.jpg" alt="" id="fimage1"></a>
+            </div>
+          </div>
+        </div>
+
+        <div id="SustainabilityandSocialResponsibility" class="tabcontent">
+          <div class="row r21">
+            <div class="col">
+              <a href=""><img src="../media/f9.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f10.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f11.jpg" alt="" id="fimage1"></a>
+            </div>
+            <div class="col">
+              <a href=""><img src="../media/f12.jpg" alt="" id="fimage1"></a>
+            </div>
+			</div>
+			</div>
+		</div>
+        </div>
+
+
+
+
+        <div class="lowerSection">
+          <img src="../media/images/footerLogo.png" alt="" class="f1">
+          <p id="description">Asia-Pacific Institute of Management<br> is a top ranked Business School of India.<br> The latest Business Today - MDRA survey<br> ranked the Institute "6th" amongst private<br> B-Schools in North India (9th amongst all<br> B-Schools in North India).</p>
+          <br><br>
+          <p id="accr">Accreditions:</p>
+          <img src="../media/images/accc1.png" alt="" id="accimg1">
+          <img src="../media/images/accc2.png" alt="" id="accimg">
+          <img src="../media/images/accc3.png" alt="" id="accimg">
+          <img src="../media/images/accc4.png" alt="" id="accimg">
+
+          <div class="f4">
+            <ul type="none">
+              <li id="fhh"><strong>ACADEMIC<br> PROGRAMMES</strong></li>
+              <br>
+              <li><a href="#" id="flink">PGDM</a></li>
+              <li><a href="#" id="flink">PGDM Marketing</a></li>
+              <li><a href="#" id="flink">PGDM IB</a></li>
+              <li><a href="#" id="flink">PGDM BFS</a></li>
+              <li><a href="#" id="flink">Executive PGDM</li>
+              <li><a href="#" id="flink">IBM SPSS</li>
+              <li><a href="#" id="flink">Mandatory Disclosures</a></li>
+              <li><a href="#" id="flink">NIRF 2017</a></li>
+            </ul>
+          </div>
+          <div class="f5">
+            <ul type="none">
+              <li id="fhh"><strong>ADMISSION</strong></li>
+              <br>
+              <li><a href="" id="flink">PGDM</a></li>
+              <li><a href="" id="flink">PGDM Marketing</a></li>
+              <li><a href="" id="flink">PGDM IB</a></li>
+              <li><a href="" id="flink">PGDM BFS</a></li>
+              <li><a href="" id="flink">CFERM</a></li>
+            </ul>
+          </div>
+          <div class="f6">
+              <ul type="none">
+                <li id="fhh"><strong>ALUMNI</strong></li>
+                <br>
+                <li><a href="" id="flink">Alumni in News</a></li>
+                <li><a href="" id="flink">Alumni Events</a></li>
+                <li><a href="" id="flink">Alumni Newsletter</a></li>
+              </ul>
+          </div>
+          <div class="f7">
+            <ul type="none">
+              <li id="fhh"><strong>OTHER LINKS</strong></li>
+              <br>
+              <li><a href="" id="flink">Contact Us</a></li>
+              <li><a href="" id="flink">Library</a></li>
+              <li><a href="" id="flink">Vision & Mission</a></li>
+              <li><a href="" id="flink">Chairman's Message</a></li>
+              <li><a href="" id="flink">Director's Message</a></li>
+              <li><a href="" id="flink">Mandatory Disclosure</a></li>
+              <li><a href="" id="flink">AICTE Approval Letter</a></li>
+              <li><a href="" id="flink">NIRF-2017 DATA</a></li>
+              <li><a href="" id="flink">Privacy Policy</a></li>
+              <li><a href="" id="flink">Image Gallery</a></li>
+              <li><a href="" id="flink">Video Gallery</a></li>
+              <li><a href="" id="flink">Blog</a></li>
+            </ul>
+          </div>
+          <div class="f8">
+
+              <p><strong>REQUEST A CALL BACK</strong></p>
+              <br>
+              <p id="footerli"><input type="text" placeholder="Name:" id="ff"></p>
+
+              <p id="footerli"><input type="text" placeholder="Phone No:" id="ff"></p>
+
+              <p id="footerli"><input type="text" placeholder="Email:" id="ff"></p>
+
+              <p id="footerli"><input type="text" placeholder="Query For:" id="ffff"></p>
+
+              <a href="#"><img src="../media/images/submitFooter.png" alt=""></a>
+
+          </div>
+          <div class="footersocialMediaLinks">
+            <a href="#"><img id="ffb" src="../media/images/footerFB.png"></a>
+            <a href="#"><img id="fgPlus" src="../media/images/footergPlus.png"></a>
+            <a href="#"><img id="flinkedIn" src="../media/images/footerlinkedin.png"></a>
+            <a href="#"><img id="ftwitter" src="../media/images/footerskype.png"></a>
+            <a href="#"><img id="fyoutube" src="../media/images/footertwitter.png"></a>
+            <a href="#"><img id="finstagram" src="../media/images/footerInstagram.png"></a>
+          </div>
+        </div>
+      <div class="end">
+        <br>
+         © Asia Pacific Institute of Management. All rights reserved.
+        <br>
+      </div>
+
+    </div>
+  </body>
+    <script>
+      function myMap() {
+      var mapOptions = {
+          center: new google.maps.LatLng(51.5, -0.12),
+          zoom: 10,
+          mapTypeId: google.maps.MapTypeId.HYBRID
+      }
+      var map = new google.maps.Map(document.getElementById("connectWithUs"), mapOptions);
+      }
+    </script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+</html>

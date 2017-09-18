@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/home.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="http://github.hubspot.com/odometer/themes/odometer-theme-car.css" />
+    <script src="http://github.hubspot.com/odometer/odometer.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js">
+    </script>
+    <script src="http://maps.googleapis.com/maps/api/js?key=mykey&sensor=false"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js">
+    </script>
+    <script type="text/javascript">
+    jQuery(document).ready(function( $ ) {
+      $('span').counterUp({
+
+        delay: 10, // the delay time in ms
+
+        time: 1000 // the speed time in ms
+
+      });
+
+    });
+
+    </script>
+    <title></title>
+  </head>
+  <body>
+    <div class="parentContainer">
+      <div class="header">
+        <div class="contact">
+          <p id="call">Call Us On: 180011334    |    Email: admissions@asiapacific.edu</p>
+        </div>
+
+          <img id="fb" src="../media/images/facebook.png">
+          <img id="gPlus" src="../media/images/googleplus.png">
+          <img id="linkedIn" src="../media/images/linked.png">
+          <img id="pinterest" src="../media/images/pinterest.png">
+          <img id="twitter" src="../media/images/twitter.png">
+          <img id="youtube" src="../media/images/youtube.png">
+
+
+      </div>
+
+      <div class="navigationBar">
+        <img src="../media/images/mainlogo.png" alt="" id="logo">
+        <div class="menuLinks">
+          <div class="input-group searchButton">
+            <input type="text" class=" searchBar" placeholder="">
+            <a href="#"><img src="../media/images/searchIcon.png" alt="" ></a>
+            <div class="searchIcon">
+              <a href="#"><img src="../media/images/loginButton.png" alt=""></a>
+            </div>
+          </div>
+          <ul type="none" class="navList">
+            <li id="navItem" class="navItem1"><a href="#" id="navLink">About Us</a></li>
+            <li id="navItem"><a href="#" id="navLink">Programs</a></li>
+            <li id="navItem"><a href="#" id="navLink">Research</a></li>
+            <li id="navItem"><a href="#" id="navLink">Faculty</a></li>
+            <li id="navItem"><a href="#" id="navLink">Admissions</a></li>
+            <li id="navItem"><a href="#" id="navLink">Library</a></li>
+            <li id="navItem"><a href="#" id="navLink">Placement</a></li>
+            <li id="navItem"><a href="#" id="navLink">Takshila</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mainvideo">
+        <video autoplay="autoplay" loop="loop" muted="">
+          <source src="../media/demo.mp4" type="video/mp4" />
+        </video>
+        <div class="bannerText">
+          <h6 id="heading1"><u>THE BEST LEARNING INSTITUTION</u></h6>
+          <h1 id="heading2">Asia-Pacific Institute of Management</h1>
+          <h6 id="heading3">Approved by AICTE (MHRD, Govt. of India)</h6>
+          <a href="#"><img src="../media/images/livechat.png" alt="" id="chatButton"></a>
+          <a href="#"><img src="../media/images/contactus.png" alt="" id="contactButton"></a>
+          <a href="#"><img src="../media/images/APPLYnOW.png" alt="" id="applyButton"></a>
+        </div>
+      </div>
+
+      <div class="bannerFooter">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="card cat11" style="height:20rem">
+                <div class="containerHeading">
+                <p id="ph">Placements</p>
+                </div>
+                <div class="containerContent">
+                  <ul type="none">
+                    <br>
+                    <li><a href="#"  id="placements">Placements (2015-2017)</a></li>
+                    <br>
+                    <li><a href="#" id="placements">Placements (2014-2016)</a></li>
+                    <br>
+                    <li><a href="#" id="placements">Alumni</a></li>
+                  </ul>
+                </div>
+                <br>
+                <button type="button" class="placementViewMore">VIEW MORE</button>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card cat22" style="height:20rem">
+                <div class="containerHeading">
+                  <p id="ph1">Latest News</p>
+                </div>
+                <div class="dummyln">
+                  Adman Mr. Prahlad Kakkar to address Management<br><br><i id="date">8th Sept 2017</i>
+                  <br><br><br>
+                  AIM to hold the 18th Convocation Ceremony.<br><br><i id="date">16th Sept 2017</i>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card cat33" style="height:20rem">
+                <div class="containerHeading">
+                  <p id="ph2">Upcoming Events</p>
+                </div>
+                <div class="dummyln">
+                  <p>2017 National Summit.<br><br><i>9th Sept 2017</i><br><a href="#" id="cddd">READ MORE  <img src="../media/images/readMoreArrow.png" alt="" id="imgarrow"></a></p>
+                  <br><p>Management Development Programme<br><br><i>21st and 22nd sept 2017</i><br><a href="#" id="cddd">READ MORE  <img src="../media/images/readMoreArrow.png" alt="" id="imgarrow"></a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card cat44" style="height:20rem">
+                <div class="containerHeading">
+                  <p id="ph2">Admissions 2017-2019</p>
+                </div>
+                <div class="containerContent">
+                  <ul type="none">
+                    <br>
+                    <li><a href="#" id="placements">Download Brochure</a></li>
+                    <br>
+                    <li><a href="#" id="placements">Announcement</a></li>
+                  </ul>
+                </div>
+                <br>
+                <button type="button" class="admissionsViewMore">APPLY ONLINE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="../media/images/admissionquery.png" alt="" id="admissionQuery">
+      </div>
+
+      <div class="academicProgrammes">
+
+
+        <h3 class="admheadingbottom1">Academic Programmes</h3>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="card text-white card4" style="height:13rem">
+                <div class="card-body">
+                  <h4 class="card-title ctt">PGDM</h4>
+                  <p class="card-text ctxt">Two Year Full-Time (Approved by AICTE, Ministry of HRD, Government of India)</p>
+                  <a href="#" class="btn btn-link rmcs">Read More <img src="../media/images/readmorecoursesarrow.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-white card5" style="height:13rem">
+                <div class="card-body">
+                  <h4 class="card-title ctt">PGDM Marketing</h4>
+                  <p class="card-text ctxt">PGDM Marketing programme is spread over a period of two years </p>
+                  <a href="#" class="btn btn-link rmcs">Read More <img src="../media/images/readmorecoursesarrow.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-white card6" style="height:13rem">
+                <div class="card-body">
+                  <h4 class="card-title ctt">PGDM IB</h4>
+                  <p class="card-text ctxt">PGDM (IB) - program is spread over a period of two years WIth the most comprehensive curriculum.</p>
+                  <a href="#" class="btn btn-link rmcs">Read More <img src="../media/images/readmorecoursesarrow.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="card text-white card1" style="height:13rem">
+                <div class="card-body">
+                  <h4 class="card-title ctt">PGDM BFS</h4>
+                  <p class="card-text ctxt">Post Graduate Diploma in Management BFS is a two year full time program</p>
+                  <a href="#" class="btn btn-link rmcs">Read More <img src="../media/images/readmorecoursesarrow.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-white card2" style="height:13rem">
+                <div class="card-body">
+                  <h4 class="card-title ctt">IBM SPSS Statistics Certification</h4>
+                  <p class="card-text ctxt">IBM SPSS Statistics Certification is a mid-December (10 days Intensive Training Program)</p>
+                  <a href="#" class="btn btn-link rmcs">Read More <img src="../media/images/readmorecoursesarrow.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-white card3" style="height:13rem">
+                <div class="card-body">
+                  <h4 class="card-title ctt">Executive - PGDM</h4>
+                  <p class="card-text ctxt">The 3 years Executive PGDM Programme is specially designed for working professionals</p>
+                  <a href="#" class="btn btn-link rmcs">Read More <img src="../media/images/readmorecoursesarrow.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="faculty">
+
+        <h3 class="admheadingbottom1">Faculty</h3>
+        <div class="facultySlider">
+          <a href="#"><img src="../media/images/carouselArrowleft.png" alt="" id="l1"></a>
+          <img src="../media/468_IMG_2299.JPG" alt="" id="carousel1">
+          <img src="../media/fcc2.jpg" alt="" id="carousel2">
+          <img src="../media/fcc3.JPG" alt="" id="carousel3">
+          <img src="../media/fcc4.JPG" alt="" id="carousel4">
+          <a href="#"><img src="../media/images/carouselArrow.png" alt="" id="l1"></a>
+        </div>
+      </div>
+      <a href="#"><img src="../media/images/viewAll.png" alt="" id="viewAll"></a>
+
+      <div class="facultyAchievements">
+
+        <h3 class="admheadingbottom1">Faculty Achievements</h3>
+        <div class="container">
+
+          <div class="facultyAchievementsSections row">
+            <div class="col">
+              <div class="card cat1" style="height:18.5rem">
+                <img class="card-img-top" src="../media/60_R.k.Shrivastava.jpg" alt="Card image cap">
+                <p id="cd">Prof. R.K.Srivastava has done his M.Com. from  F.C.M.A. (Fellow of Institute of Cost and Works Accountants of India) </p>
+                <a href="#" id="cdd">READ MORE</a>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card cat2" style="height:18.5rem">
+                  <img class="card-img-top" src="../media/95_drspch.JPG" alt="Card image cap">
+                  <p id="cd">Dr. S.P. Chauhan has received his Doctorate in Psychology from Panjab University, Chandigarh.</p>
+                  <a href="#" id="cdd">READ MORE</a>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card cat3" style="height:18.5rem">
+                <img class="card-img-top" src="../media/468_IMG_2299.JPG" alt="Card image cap">
+                <p id="cd">Dr. Dahiya is a Master’s in Economics from Kurukshetra University and Ph.D. in Economics from Jamia Millia Islamia</p>
+                <a href="#" id="cdd">READ MORE</a>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card cat4" style="height:18.5rem">
+                <img class="card-img-top" src="../media/484_surabhi.jpg" alt="Card image cap">
+                <p id="cd">Dr. Surabhi Goyal has an experience of 15 years and continues to hold passion for teaching all levels</p>
+                <a href="#" id="cdd">READ MORE</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+      <a href="#"><img src="../media/images/viewAll.png" alt="" id="viewAll1"></a>
+      <a href="#"></a><img src="../media/images/" alt="">
+
+      <div class="latestEvents">
+
+        <h3 class="admheadingbottom1">Latest News</h3>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="card cat1" style="height:11rem">
+                <img src="../media/148_145_prahlad kakkar.jpg" alt="" id="ln">
+                <div class="desc">
+                  Prahlad Kakkar to visit AIM on 8th September 2017</div>
+                <div class="source">
+                  <br>
+                  Times of India | <br>August 2,2017
+
+                  <br>
+                  <a href="#"><img src="../media/images/ReadMoreLatestNews.png" alt="" id="rmln"></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card cat2" style="height:11rem">
+                <img src="../media/147_news-update-5656.jpg" alt="" id="ln">
+                <div class="desc">
+                  2017 National Summit on 9th sept at Hotel Taj Mahal
+                </div>
+                <div class="source">
+                  <br>
+                  Times of India | <br>August 2,2017
+
+                  <br>
+                  <a href="#"><img src="../media/images/ReadMoreLatestNews.png" alt="" id="rmln"></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card cat3" style="height:11rem">
+                <img src="../media/146_convocation-news.jpg" alt="" id="ln">
+                <div class="desc">
+                  18th Annual Convocation on 16th sept 2017
+                </div>
+                <div class="source">
+                  <br>
+                  Times of India | <br>August 2,2017
+
+                  <br>
+                  <a href="#"><img src="../media/images/ReadMoreLatestNews.png" alt="" id="rmln"></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <a href="#"><img src="../media/images/ReadMore.png" alt="" id="readmore"></a>
+
+      <div class="currentEvents">
+
+        <h3 class="admheadingbottom1">Current Events</h3>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="card cat1" style="height:17rem">
+                <div class="img1">
+                  <img class="card-img-top img1" src="../media/146_convocation-news.jpg" alt="Card image cap">
+                </div>
+                <div class=" con1">
+                  <p id="cd"><strong>18th Annual Convocation on 16th sept 2017 of AIM</strong></p>
+                    <p id="ceim">September 21-22, 2017  <br><p id="ceiminner">Asia Pacific Institute</p><a href="#" id="cdd">READ MORE</a></p>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="col">
+              <div class="card cat2" style="height:17rem">
+                  <div class="img1"><img class="card-img-top" src="../media/147_news-update-5656.jpg" alt="Card image cap"></div>
+                  <div class=" con1">
+                  <p id="cd"><strong>2017 National Summit on 9th sept at Hotel Taj Mahal</strong></p>
+                  <p id="ceim">September 21-22, 2017  <br><p id="ceiminner">Asia Pacific Institute</p><a href="#" id="cdd">READ MORE</a></p>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card cat3" style="height:17rem">
+                <div class="img1"><img class="card-img-top" src="../media/pk.jpg" alt="Card image cap"></div>
+                <div class=" con1">
+                <p id="cd"><strong>Prahlad Kakkar to visit AIM on 8th September 2017</strong></p>
+                <p id="ceim">September 21-22, 2017  <br><p id="ceiminner">Asia Pacific Institute</p><a href="#" id="cdd">READ MORE</a></p>
+              </div>
+
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card cat4" style="height:17rem">
+                <div class="img1"><img class="card-img-top" src="../media/dr-pawan-agrawal-at-aim-campus.jpg" alt="Card image cap"></div>
+                <div class=" con1">
+                <p id="cd"><strong>International Motivational Speaker Dr. Pawan Agrawal at AIM Campus</strong></p>
+                <p id="ceim">August 5, 2017  <br><p id="ceiminner">Asia Pacific Institute</p><a href="#" id="cdd">READ MORE</a></p>
+              </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <img src="../media/images/AllEvents.png" alt="" id="av">
+
+      <div class="alumni">
+        <img src="../media/alumni_background.png" alt="" class="alumniImage">
+        <div class="counters">
+          <div class="row alumniCounters">
+            <div class="col">
+                <div class="count1"><span>300</span>+</div>
+            </div>
+            <div class="col">
+                <div class="count2"><span>500</span>+</div>
+            </div>
+            <div class="col">
+                <div class="count3"><span>700</span>+</div>
+            </div>
+            <div class="col">
+                <div class="count4"><span>950</span>+</div>
+            </div>
+          </div>
+          <div class=" alumniIdentifiers">
+            <p id="entrepreneurs">Entrepreneurs</p>
+            <p id="cio">CIOs</p>
+            <p id="cto">CTOs</p>
+            <div id="bh">Business Heads</div>
+          </div>
+        </div>
+        <div class="alumniImageForCounters">
+          <img src="../media/alumni_student.png" alt="" class="alumniStudent">
+        </div>
+        <div class="logoMin">
+          <img src="../media/images/alumniCounterLogo.png" alt="" class="logoMin">
+        </div>
+        <div class="alumniDetails">
+          <h4>Alumni Details</h4>
+        </div>
+
+      </div>
+      <div class="underline">
+        <img src="../media/underline.jpg" alt="underline">
+      </div>
+      <div class="underline1">
+        <img src="../media/underline.jpg" alt="underline">
+      </div>
+      <div class="underline2">
+        <img src="../media/underline.jpg" alt="underline">
+      </div>
+      <div class="underline3">
+        <img src="../media/underline.jpg" alt="underline">
+      </div>
+      <a href="#"><img src="../media/images/enrollNow.png" alt="" id="enroll"></a>
+      <a href="#"><img src="../media/images/learnmore.png" alt="" id="lmore"></a>
+
+      <div class="">
+        <div id="googleMap">
+        </div>
+        <div class="connectWithUs">
+          <br>
+          <p id="hcc">Connect With Us<p>
+          <img src="../media/p6.png" alt="" id="c1">
+          <p id="p1">Asia Pacific Institute of Management</p>
+          <p id="commonP">3 & 4 Institutional Area, Jasola,<br>
+          New Delhi - 110025</p>
+
+          <img src="../media/p7.png" alt="" id="c2"><p id="p2">Admission Query :</p>
+          <p id="commonP1">8287252525 / 8287454545</p>
+
+          <img src="../media/p8.png" alt="" id="c3"><p id="p3">Phone: +91-11-42094800</p>
+          <p id="commonP2">Toll Free No : 1800113334</p>
+
+          <img src="../media/p9.png" alt="" id="c4"><p id="p4">Email: admissions@asiapacific.edu</p>
+        </div>
+
+      </div>
+
+
+      <div class="lowerSection">
+        <img src="../media/images/footerLogo.png" alt="" class="f1">
+        <p id="description">Asia-Pacific Institute of Management<br> is a top ranked Business School of India.<br> The latest Business Today - MDRA survey<br> ranked the Institute "6th" amongst private<br> B-Schools in North India (9th amongst all<br> B-Schools in North India).</p>
+        <br><br>
+        <p id="accr">Accreditions:</p>
+        <img src="../media/images/accc1.png" alt="" id="accimg1">
+        <img src="../media/images/accc2.png" alt="" id="accimg">
+        <img src="../media/images/accc3.png" alt="" id="accimg">
+        <img src="../media/images/accc4.png" alt="" id="accimg">
+
+        <div class="f4">
+          <ul type="none">
+            <li id="fhh"><strong>ACADEMIC<br> PROGRAMMES</strong></li>
+            <br>
+            <li><a href="#" id="flink">PGDM</a></li>
+            <li><a href="#" id="flink">PGDM Marketing</a></li>
+            <li><a href="#" id="flink">PGDM IB</a></li>
+            <li><a href="#" id="flink">PGDM BFS</a></li>
+            <li><a href="#" id="flink">Executive PGDM</li>
+            <li><a href="#" id="flink">IBM SPSS</li>
+            <li><a href="#" id="flink">Mandatory Disclosures</a></li>
+            <li><a href="#" id="flink">NIRF 2017</a></li>
+          </ul>
+        </div>
+        <div class="f5">
+          <ul type="none">
+            <li id="fhh"><strong>ADMISSION</strong></li>
+            <br>
+            <li><a href="" id="flink">PGDM</a></li>
+            <li><a href="" id="flink">PGDM Marketing</a></li>
+            <li><a href="" id="flink">PGDM IB</a></li>
+            <li><a href="" id="flink">PGDM BFS</a></li>
+            <li><a href="" id="flink">CFERM</a></li>
+          </ul>
+        </div>
+        <div class="f6">
+            <ul type="none">
+              <li id="fhh"><strong>ALUMNI</strong></li>
+              <br>
+              <li><a href="" id="flink">Alumni in News</a></li>
+              <li><a href="" id="flink">Alumni Events</a></li>
+              <li><a href="" id="flink">Alumni Newsletter</a></li>
+            </ul>
+        </div>
+        <div class="f7">
+          <ul type="none">
+            <li id="fhh"><strong>OTHER LINKS</strong></li>
+            <br>
+            <li><a href="" id="flink">Contact Us</a></li>
+            <li><a href="" id="flink">Library</a></li>
+            <li><a href="" id="flink">Vision & Mission</a></li>
+            <li><a href="" id="flink">Chairman's Message</a></li>
+            <li><a href="" id="flink">Director's Message</a></li>
+            <li><a href="" id="flink">Mandatory Disclosure</a></li>
+            <li><a href="" id="flink">AICTE Approval Letter</a></li>
+            <li><a href="" id="flink">NIRF-2017 DATA</a></li>
+            <li><a href="" id="flink">Privacy Policy</a></li>
+            <li><a href="" id="flink">Image Gallery</a></li>
+            <li><a href="" id="flink">Video Gallery</a></li>
+            <li><a href="" id="flink">Blog</a></li>
+          </ul>
+        </div>
+        <div class="f8">
+
+            <p><strong>REQUEST A CALL BACK</strong></p>
+            <br>
+            <p id="footerli"><input type="text" placeholder="Name:" id="ff"></p>
+
+            <p id="footerli"><input type="text" placeholder="Phone No:" id="ff"></p>
+
+            <p id="footerli"><input type="text" placeholder="Email:" id="ff"></p>
+
+            <p id="footerli"><input type="text" placeholder="Query For:" id="ffff"></p>
+
+            <a href="#"><img src="../media/images/submitFooter.png" alt=""></a>
+
+        </div>
+        <div class="footersocialMediaLinks">
+          <a href="#"><img id="ffb" src="../media/images/footerFB.png"></a>
+          <a href="#"><img id="fgPlus" src="../media/images/footergPlus.png"></a>
+          <a href="#"><img id="flinkedIn" src="../media/images/footerlinkedin.png"></a>
+          <a href="#"><img id="ftwitter" src="../media/images/footerskype.png"></a>
+          <a href="#"><img id="fyoutube" src="../media/images/footertwitter.png"></a>
+          <a href="#"><img id="finstagram" src="../media/images/footerInstagram.png"></a>
+        </div>
+      </div>
+      <div class="end">
+        <br>
+         © Asia Pacific Institute of Management. All rights reserved.
+        <br>
+      </div>
+
+    </div>
+  </body>
+  <script>
+  function myMap() {
+  var mapProp= {
+      center:new google.maps.LatLng(28.539642, 77.293056),
+      zoom:5,
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+  }
+  </script>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?AIzaSyDweongk5QRWMoa9ohzTqNZXLYieOvch_A=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+</html>
